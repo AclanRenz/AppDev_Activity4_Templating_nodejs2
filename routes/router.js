@@ -4,8 +4,8 @@ const hp = require('../controller/hp_controller')
 
 router.get('/', hp.home);
 router.get('/favorites', hp.favorites);
-router.get('/watchlist', hp.watchlist);
-router.get('/trending', hp.trending);
-router.get('/recent', hp.recent);
+router.get('/playlist', hp.playlist);
+router.get('/about', hp.about);
+router.get('/artist', hp.artist);
 
 module.exports = router;

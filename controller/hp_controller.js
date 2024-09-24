@@ -5,14 +5,14 @@ const ph = {
     favorites:(req, res) => {
         res.render('favorites');
     },
-    watchlist:(req, res) => {
-        res.render('watchlist');
+    playlist:(req, res) => {
+        res.render('playlist');
     },
-    trending:(req, res) => {
-        res.render('trending');
+    about:(req, res) => {
+        res.render('about');
     },
-    recent:(req, res) => {
-        res.render('recent');
+    artist:(req, res) => {
+        res.render('artist');
     }
 };
 

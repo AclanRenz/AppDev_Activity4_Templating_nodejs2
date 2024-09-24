@@ -1,0 +1,156 @@
+h2 {
+    font-size: 2rem;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #C51230;
+}
+
+/* Container for Layout */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Favorites List Section */
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    width: 100%; /* Ensure it spans the full width of the container */
+}
+
+/* Individual Favorite Item Styling */
+.favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width to maintain responsiveness */
+    max-width: 1000px; /* Ensures content doesn’t stretch too wide */
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.favorite-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Album Cover Styling */
+.album-cover {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Song Details Styling */
+.song-detail {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-detail h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C51230;
+}
+
+.song-detail p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 2px 0;
+}
+
+/* Buttons Styling */
+.play-button, .remove-button {
+    background-color: #C51230;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover, .remove-button:hover {
+    background-color: #ff4d5a;
+}
+
+/* Play All Button */
+.play-all-button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #C51230;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.play-all-button:hover {
+    background-color: #ff4d5a;
+}
+
+/* Empty Favorites Styling */
+.empty-favorites {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.empty-favorites h3 {
+    font-size: 1.8rem;
+    color: #C51230;
+}
+
+.empty-favorites p {
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+/* Search and Filter Section */
+.favorites-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px; /* Flexible width */
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+.filter-dropdown {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
